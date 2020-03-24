@@ -39,5 +39,5 @@ class ModelSaverGoogleCloud(PeriodicCallback):
             subprocess.check_call([
                 'gsutil', 'cp',
                 file_to_copy,
-                bucket_path + bucket_subdir
+                bucket_path
             ])
