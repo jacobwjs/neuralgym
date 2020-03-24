@@ -4,6 +4,7 @@ from .hyper_param_scheduler import HyperParamScheduler
 from .weights_viewer import WeightsViewer
 from .model_sync import ModelSync
 from .model_restorer import ModelRestorer
+from .model_saver import ModelSaver, ModelSaverGoogleCloud
 from .model_saver import ModelSaver
 from .npz_model_loader import NPZModelLoader
 from .summary_writer import SummaryWriter
@@ -15,4 +16,5 @@ __all__ = ['Callback', 'CallbackLoc', 'PeriodicCallback', 'OnceCallback',
            'ScheduledCallback', 'HyperParamScheduler', 'WeightsViewer',
            'ModelSync', 'ModelSaver', 'ModelRestorer', 'NPZModelLoader',
            'SummaryWriter', 'SecondaryTrainer', 'SecondaryMultiGPUTrainer',
+           'ModelSaverGoogleCloud',
            ]
