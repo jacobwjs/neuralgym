@@ -74,7 +74,7 @@ class ModelSaver(PeriodicCallback):
             self._saver.save(sess, self._dump_prefix, global_step=step)
 
             if self._gcloud_bucket_path is not None:
-                file_to_copy = self.__dump_prefix
+                file_to_copy = self._dump_prefix
                 bucket_path = self._gcloud_bucket_path + "/models/"
                 callback_log('Trigger ModelSaverGoogleCloud: Copying model to {}->{}.'.format(
                     self._dump_prefix, bucket_path))
